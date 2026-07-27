@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Castello Forte | Clube de Assinatura & Barbearia Premium</title>
+    <meta name="description" content="A principal barbearia premium da Região dos Lagos. Unidades em Cabo Frio (Shopping Park Lagos), Rio das Ostras (Shopping Plaza) e Búzios (Porto da Barra). Junte-se ao nosso Clube de Assinatura!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <img src="logo Castello Forte.jpg" alt="Logo Castello Forte Barber Shop" class="logo-img">
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#clube" class="nav-link">Clube de Assinatura</a>
+                <a href="#unidades" class="nav-link">Unidades</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Castello%20Forte." target="_blank" class="btn btn-primary nav-btn">
+                    <i class="fa-solid fa-calendar-check"></i> Agendar Agora
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Club Announcement Badge -->
+                <div class="club-badge">
+                    <span class="badge-icon">💈</span>
+                    <span class="badge-text">Junte-se a mais de <strong>700 membros</strong> no nosso clube</span>
+                </div>
+                
+                <h1 class="hero-title">Estilo, Tradição & <span class="text-gold">Exclusividade</span></h1>
+                <p class="hero-subtitle">
+                    A experiência definitiva em cuidados masculinos na Região dos Lagos. Cortes impecáveis, barba esculpida e atendimento classe A em nossas 3 unidades.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#clube" class="btn btn-gold btn-lg">
+                        <i class="fa-solid fa-crown"></i> Conhecer os Planos
+                    </a>
+                    <a href="#unidades" class="btn btn-outline btn-lg">
+                        <i class="fa-solid fa-location-dot"></i> Nossas 3 Unidades
+                    </a>
+                </div>
+
+                <!-- Stats / Quick Info -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">+700</span>
+                        <span class="stat-label">Membros Ativos</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Unidades Premium</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9 ★</span>
+                        <span class="stat-label">Avaliação dos Clientes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="card-hero-logo">
+                    <img src="logo Castello Forte.jpg" alt="Castello Forte Barber Shop Escudo" class="hero-shield-img">
+                    <div class="shield-badge-tag">Região dos Lagos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Clube de Assinatura Promo Strip -->
+    <section class="banner-club-strip">
+        <div class="container strip-flex">
+            <div class="strip-text">
+                <i class="fa-solid fa-scissors strip-icon"></i>
+                <span>Assine o <strong>Clube Castello Forte</strong> e corte o cabelo e faça a barba sem limites todos os meses!</span>
+            </div>
+            <a href="#clube" class="btn btn-dark btn-sm">Ver Vantagens</a>
+        </div>
+    </section>
+
+    <!-- Membership Plans Section (Planos de Assinatura) -->
+    <section class="section plans-section" id="clube">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag"><i class="fa-solid fa-crown"></i> CLUBE CASTELLO FORTE</span>
+                <h2 class="section-title">Planos de Assinatura <span class="text-gold">Exclusivos</span></h2>
+                <p class="section-description">
+                    Junte-se a <strong>mais de 700 membros</strong> que mantêm o visual sempre impecável com economia, prioridade no agendamento e benefícios VIP.
+                </p>
+            </div>
+
+            <!-- Billing Toggle -->
+            <div class="plan-toggle-wrapper">
+                <span class="toggle-label active" id="label-monthly">Mensal</span>
+                <label class="switch">
+                    <input type="checkbox" id="plan-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label" id="label-annual">Anual <span class="badge-discount">Economize 15%</span></span>
+            </div>
+
+            <!-- Plans Cards Grid -->
+            <div class="plans-grid">
+                
+                <!-- Plan 1: Barba -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-icon"><i class="fa-solid fa-user-ninja"></i></div>
+                        <h3 class="plan-name">Plano Barba Club</h3>
+                        <p class="plan-subtitle">Ideal para manter a barba alinhada e impecável</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="amount monthly-price">119</span>
+                        <span class="amount annual-price hidden">99</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check text-gold"></i> Barba <strong>ILIMITADA</strong> no mês</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Toalha quente & barboterapia</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> 10% OFF em produtos masculinos</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Bebida cortesia a cada visita</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Agendamento simplificado</li>
+                    </ul>
+                    <div class="plan-footer">
+                        <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Barba%20Club%20da%20Castello%20Forte." target="_blank" class="btn btn-outline btn-block">
+                            Assinar Plano Barba
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 2: VIP / Featured -->
+                <div class="plan-card plan-featured">
+                    <div class="featured-tag">MAIS POPULAR • 700+ MEMBROS</div>
+                    <div class="plan-header">
+                        <div class="plan-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="plan-name">Plano Castello VIP</h3>
+                        <p class="plan-subtitle">Cabelo + Barba Ilimitados. A experiência completa.</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="amount monthly-price">199</span>
+                        <span class="amount annual-price hidden">169</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check text-gold"></i> Cortes de Cabelo <strong>ILIMITADOS</strong></li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Barboterapia & Barba <strong>ILIMITADAS</strong></li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Prioridade Máxima na Agenda</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> 15% OFF em toda linha de produtos</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Cerveja Heineken/Eisenbahn cortesia</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Válido em todas as 3 unidades</li>
+                    </ul>
+                    <div class="plan-footer">
+                        <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Castello%20VIP%20(Cabelo%20%2B%20Barba%20Ilimitados)." target="_blank" class="btn btn-gold btn-block">
+                            Quero Ser Castello VIP <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 3: Cabelo -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-icon"><i class="fa-solid fa-scissors"></i></div>
+                        <h3 class="plan-name">Plano Barber Club</h3>
+                        <p class="plan-subtitle">Para quem quer estar sempre no corte ideal</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="amount monthly-price">129</span>
+                        <span class="amount annual-price hidden">109</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check text-gold"></i> Cortes de Cabelo <strong>ILIMITADOS</strong></li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Lavagem & Finalização com Pomada</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> 10% OFF em produtos</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Bebida cortesia a cada visita</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Agendamento garantido</li>
+                    </ul>
+                    <div class="plan-footer">
+                        <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Barber%20Club%20(Cabelo)." target="_blank" class="btn btn-outline btn-block">
+                            Assinar Plano Cabelo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Member guarantee notice -->
+            <div class="club-guarantee">
+                <i class="fa-solid fa-lock text-gold"></i> Sem taxa de fidelidade oculta. Cancele ou altere seu plano quando quiser via WhatsApp com 1 clique.
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section (Unidades) -->
+    <section class="section units-section" id="unidades">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag"><i class="fa-solid fa-map-pin"></i> NOSSAS LOCALIZAÇÕES</span>
+                <h2 class="section-title">3 Unidades na <span class="text-gold">Região dos Lagos</span></h2>
+                <p class="section-description">
+                    Encontre a unidade Castello Forte mais próxima de você em Cabo Frio, Rio das Ostras e Búzios. Ambientes modernos, climatizados e com o mais alto padrão de atendimento.
+                </p>
+            </div>
+
+            <div class="units-grid">
+                
+                <!-- Unit 1: Cabo Frio -->
+                <div class="unit-card">
+                    <div class="unit-header-bar">
+                        <span class="unit-badge">Cabo Frio</span>
+                    </div>
+                    <div class="unit-image-box">
+                        <div class="unit-icon-big"><i class="fa-solid fa-city"></i></div>
+                        <div class="unit-img-overlay"></div>
+                    </div>
+                    <div class="unit-body">
+                        <h3 class="unit-title">📍 Shopping Park Lagos</h3>
+                        <p class="unit-city">Cabo Frio - RJ</p>
+                        <ul class="unit-details">
+                            <li><i class="fa-solid fa-location-dot text-gold"></i> Av. Henrique Terra, 1700 - Palmeiras</li>
+                            <li><i class="fa-solid fa-clock text-gold"></i> Seg a Sáb: 10h às 22h | Dom: 13h às 21h</li>
+                            <li><i class="fa-solid fa-square-parking text-gold"></i> Estacionamento privativo do Shopping</li>
+                            <li><i class="fa-solid fa-wifi text-gold"></i> Wi-Fi de alta velocidade + Cerveja gelada</li>
+                        </ul>
+                        <div class="unit-actions">
+                            <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20na%20unidade%20Shopping%20Park%20Lagos%20(Cabo%20Frio)." target="_blank" class="btn btn-gold btn-sm btn-block">
+                                <i class="fa-brands fa-whatsapp"></i> Agendar em Cabo Frio
+                            </a>
+                            <a href="https://maps.google.com/?q=Shopping+Park+Lagos+Cabo+Frio" target="_blank" class="btn btn-dark-outline btn-sm btn-block">
+                                <i class="fa-solid fa-directions"></i> Ver no Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unit 2: Rio das Ostras -->
+                <div class="unit-card">
+                    <div class="unit-header-bar">
+                        <span class="unit-badge">Rio das Ostras</span>
+                    </div>
+                    <div class="unit-image-box">
+                        <div class="unit-icon-big"><i class="fa-solid fa-store"></i></div>
+                        <div class="unit-img-overlay"></div>
+                    </div>
+                    <div class="unit-body">
+                        <h3 class="unit-title">📍 Shopping Plaza</h3>
+                        <p class="unit-city">Rio das Ostras - RJ</p>
+                        <ul class="unit-details">
+                            <li><i class="fa-solid fa-location-dot text-gold"></i> Rod. Amaral Peixoto - Centro / Plaza</li>
+                            <li><i class="fa-solid fa-clock text-gold"></i> Seg a Sáb: 10h às 22h | Dom: 14h às 20h</li>
+                            <li><i class="fa-solid fa-square-parking text-gold"></i> Ambiente seguro no Shopping Plaza</li>
+                            <li><i class="fa-solid fa-gamepad text-gold"></i> Espaço de convivência & Bar exclusivo</li>
+                        </ul>
+                        <div class="unit-actions">
+                            <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20na%20unidade%20Shopping%20Plaza%20(Rio%20das%20Ostras)." target="_blank" class="btn btn-gold btn-sm btn-block">
+                                <i class="fa-brands fa-whatsapp"></i> Agendar em Rio das Ostras
+                            </a>
+                            <a href="https://maps.google.com/?q=Shopping+Plaza+Rio+das+Ostras" target="_blank" class="btn btn-dark-outline btn-sm btn-block">
+                                <i class="fa-solid fa-directions"></i> Ver no Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unit 3: Búzios -->
+                <div class="unit-card">
+                    <div class="unit-header-bar">
+                        <span class="unit-badge">Búzios</span>
+                    </div>
+                    <div class="unit-image-box">
+                        <div class="unit-icon-big"><i class="fa-solid fa-water"></i></div>
+                        <div class="unit-img-overlay"></div>
+                    </div>
+                    <div class="unit-body">
+                        <h3 class="unit-title">📍 Porto da Barra</h3>
+                        <p class="unit-city">Armação dos Búzios - RJ</p>
+                        <ul class="unit-details">
+                            <li><i class="fa-solid fa-location-dot text-gold"></i> Av. José Bento Ribeiro Dantas - Manguinhos</li>
+                            <li><i class="fa-solid fa-clock text-gold"></i> Seg a Sáb: 11h às 21h</li>
+                            <li><i class="fa-solid fa-umbrella-beach text-gold"></i> Localização nobre à beira-mar no Porto</li>
+                            <li><i class="fa-solid fa-cocktail text-gold"></i> Experiência Premium com vista para o pôr do sol</li>
+                        </ul>
+                        <div class="unit-actions">
+                            <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20na%20unidade%20Porto%20da%20Barra%20(B%C3%BAzios)." target="_blank" class="btn btn-gold btn-sm btn-block">
+                                <i class="fa-brands fa-whatsapp"></i> Agendar em Búzios
+                            </a>
+                            <a href="https://maps.google.com/?q=Porto+da+Barra+Buzios" target="_blank" class="btn btn-dark-outline btn-sm btn-block">
+                                <i class="fa-solid fa-directions"></i> Ver no Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section class="section services-section" id="servicos">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag"><i class="fa-solid fa-scissors"></i> CARDÁPIO DE SERVIÇOS</span>
+                <h2 class="section-title">Serviços Avulsos <span class="text-gold">& Tratamentos</span></h2>
+                <p class="section-description">
+                    Técnicas modernas combinadas com a tradição clássica dos barbeiros artesanais.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-info">
+                        <h4 class="service-title">Corte Masculino Executivo</h4>
+                        <p class="service-desc">Lavagem especial, diagnóstico do fio, corte na tesoura ou máquina e finalização premium.</p>
+                    </div>
+                    <div class="service-price">R$ 65</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-info">
+                        <h4 class="service-title">Barboterapia Castello</h4>
+                        <p class="service-desc">Toalha quente com óleos essenciais, massagem facial, alinhamento na lâmina e pós-barba hidratante.</p>
+                    </div>
+                    <div class="service-price">R$ 55</div>
+                </div>
+
+                <div class="service-card highlight-service">
+                    <div class="service-info">
+                        <h4 class="service-title">Combo Castello Forte (Cabelo + Barba)</h4>
+                        <p class="service-desc">A combinação completa para o homem moderno. Inclui bebida especial de cortesia.</p>
+                    </div>
+                    <div class="service-price">R$ 105</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-info">
+                        <h4 class="service-title">Camuflagem de Grisalhos</h4>
+                        <p class="service-desc">Pigmentação sutil e natural para disfarçar fios brancos sem perder a autenticidade.</p>
+                    </div>
+                    <div class="service-price">R$ 60</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-info">
+                        <h4 class="service-title">Hidratação & Tratamento Capilar</h4>
+                        <p class="service-desc">Nutrição profunda para couro cabeludo e fios ressecados por praia e sol.</p>
+                    </div>
+                    <div class="service-price">R$ 45</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-info">
+                        <h4 class="service-title">Pezinho / Sobrancelha</h4>
+                        <p class="service-desc">Acabamento refinado no contorno do cabelo ou alinhamento de sobrancelha masculina.</p>
+                    </div>
+                    <div class="service-price">R$ 25</div>
+                </div>
+            </div>
+
+            <div class="services-callout text-center">
+                <p>💡 <em>Dica de economia:</em> Com o <strong>Plano Castello VIP (R$ 199/mês)</strong> você pode realizar todos esses serviços sem limite!</p>
+                <a href="#clube" class="btn btn-gold btn-sm"><i class="fa-solid fa-bolt"></i> Ver Planos do Clube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Differentials -->
+    <section class="section features-section" id="diferenciais">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag"><i class="fa-solid fa-star"></i> POR QUE A CASTELLO FORTE?</span>
+                <h2 class="section-title">Muito Mais Que Um Corte de Cabelo</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-beer-mug-empty"></i></div>
+                    <h3>Bebida Cortesia</h3>
+                    <p>Relaxe enquanto aguarda ou durante o atendimento degustando uma cerveja bem gelada, café especial ou água.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3>Barbeiros Especialistas</h3>
+                    <p>Equipe constantemente treinada nas melhores visagens e tendências de cortes clássicos e modernos.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-couch"></i></div>
+                    <h3>Ambiente Climatizado & Sofisticado</h3>
+                    <p>Decoração rústica elegante com madeira nobre, cadeiras de alto conforto e som ambiente de primeira.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Agendamento Sem Fila</h3>
+                    <p>Agende online em segundos e seja atendido pontualmente na unidade de sua preferência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Social Proof -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag"><i class="fa-solid fa-comments"></i> AVALIAÇÕES DOS CLIENTES</span>
+                <h2 class="section-title">O Que Dizem Nossos <span class="text-gold">Membros</span></h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Sou membro do plano VIP no Park Lagos em Cabo Frio há mais de 1 ano. Corto toda semana antes dos meus compromissos. O atendimento e a economia valem demais!"
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Rodrigo Mendes</strong>
+                        <span>Membro Clube VIP • Cabo Frio</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Melhor barbearia de Rio das Ostras no Shopping Plaza. Barboterapia excelente com toalha quente, cerveja trincando de gelada. Recomendo de olhos fechados!"
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Gabriel Vasconcelos</strong>
+                        <span>Cliente Frequente • Rio das Ostras</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "A unidade do Porto da Barra em Búzios é fantástica. Estrutura impecável, equipe extremamente atenciosa e o visual da marina é um show à parte."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Lucas Silveira</strong>
+                        <span>Membro Clube Barba • Búzios</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner Footer -->
+    <section class="cta-banner">
+        <div class="container text-center">
+            <h2 class="cta-title">Pronto para Elevar Seu Estilo ao Próximo Nível?</h2>
+            <p class="cta-subtitle">Garanta sua vaga no Clube Castello Forte e junte-se a mais de 700 homens que não abrem mão da excelência.</p>
+            <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Quero%20me%20juntar%20ao%20clube%20com%20mais%20de%20700%20membros!" target="_blank" class="btn btn-gold btn-xl">
+                <i class="fa-brands fa-whatsapp"></i> Falar Conosco no WhatsApp: (22) 99861-6966
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container footer-content">
+            
+            <div class="footer-col footer-about">
+                <img src="logo Castello Forte.jpg" alt="Logo Castello Forte" class="footer-logo">
+                <p>
+                    Castello Forte Barber Shop - A referência em barbearia premium na Região dos Lagos. Excelência, conforto e estilo masculino em um só lugar.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/castelloforte/" target="_blank" class="social-icon" aria-label="Instagram da Castello Forte">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5522998616966" target="_blank" class="social-icon" aria-label="WhatsApp da Castello Forte">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Links Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#clube">Clube de Assinatura (+700 membros)</a></li>
+                    <li><a href="#unidades">Nossas 3 Unidades</a></li>
+                    <li><a href="#servicos">Tabela de Serviços</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Nossas Unidades</h4>
+                <ul class="footer-units-list">
+                    <li><i class="fa-solid fa-location-dot text-gold"></i> <strong>Cabo Frio:</strong> Shopping Park Lagos</li>
+                    <li><i class="fa-solid fa-location-dot text-gold"></i> <strong>Rio das Ostras:</strong> Shopping Plaza</li>
+                    <li><i class="fa-solid fa-location-dot text-gold"></i> <strong>Búzios:</strong> Porto da Barra</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Atendimento Direct</h4>
+                <p><i class="fa-brands fa-whatsapp text-gold"></i> <strong>WhatsApp:</strong> (22) 99861-6966</p>
+                <p><i class="fa-brands fa-instagram text-gold"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/castelloforte/" target="_blank" class="link-gold">@castelloforte</a></p>
+                <p><i class="fa-solid fa-clock text-gold"></i> <strong>Funcionamento:</strong> Seg a Sáb das 10h às 22h</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 Castello Forte Barber Shop. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5522998616966?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Castello%20Forte%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+        <span class="whatsapp-tooltip">Fale Conosco (22) 99861-6966</span>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
