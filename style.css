@@ -1215,3 +1215,66 @@ input:checked + .slider:before {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==========================================
+   INFINITE MOVING MARQUEE TICKER (RIGHT DIRECTION)
+   ========================================== */
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: #0d0d0d;
+    border-top: 1px solid var(--border-gold);
+    border-bottom: 1px solid var(--border-gold);
+    padding: 16px 0;
+    position: relative;
+    user-select: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marqueeRight 35s linear infinite;
+    will-change: transform;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 40px;
+    white-space: nowrap;
+}
+
+.marquee-content span {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: var(--gold-primary);
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.marquee-content span::before {
+    content: "•";
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.2rem;
+}
+
+@keyframes marqueeRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
