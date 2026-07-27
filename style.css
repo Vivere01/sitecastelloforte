@@ -320,6 +320,49 @@ img {
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
+/* Efeito Reluz / Shimmer de Brilho Passando entre as Letras */
+.title-shimmer-gold {
+    background: linear-gradient(
+        110deg,
+        #c5a059 0%,
+        #e6c667 20%,
+        #ffffff 50%,
+        #e6c667 80%,
+        #9e7930 100%
+    );
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textShimmer 3.5s linear infinite;
+    display: inline-block;
+}
+
+.title-shimmer-white {
+    background: linear-gradient(
+        110deg,
+        #ffffff 0%,
+        #e0e0e0 25%,
+        #ffffff 45%,
+        #d4af37 55%,
+        #ffffff 75%,
+        #cccccc 100%
+    );
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textShimmer 4.5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textShimmer {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
+
 .hero-subtitle {
     font-size: 1.15rem;
     color: var(--text-muted);

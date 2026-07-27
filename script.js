@@ -91,4 +91,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 5. Animated Number Counter (Contagem regressiva/progressiva de 0 até o valor final)
+    const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+    let hasAnimatedCounters = false;
+
+    function runCounters() {
+        if (hasAnimatedCounters) return;
+        hasAnimatedCounters = true;
+
+        statNumbers.forEach(stat => {
+            const target = parseFloat(stat.getAttribute('data-target'));
+            const prefix = stat.getAttribute('data-prefix') || '';
+            const suffix = stat.getAttribute('data-suffix') || '';
+            const decimals = parseInt(stat.getAttribute('data-decimals')) || 0;
+
+            const duration = 2200; // 2.2s de animação fluida
+            const frameRate = 60;
+            const totalFrames = Math.round((duration / 1000) * frameRate);
+            let frame = 0;
+
+            const timer = setInterval(() => {
+                frame++;
+                // Cubic ease-out curve
+                const progress = frame / totalFrames;
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const currentVal = target * easeOut;
+
+                if (frame >= totalFrames) {
+                    clearInterval(timer);
+                    const finalFormatted = decimals > 0 ? target.toFixed(decimals) : Math.round(target);
+                    stat.textContent = `${prefix}${finalFormatted}${suffix}`;
+                } else {
+                    const currentFormatted = decimals > 0 ? currentVal.toFixed(decimals) : Math.floor(currentVal);
+                    stat.textContent = `${prefix}${currentFormatted}${suffix}`;
+                }
+            }, 1000 / frameRate);
+        });
+    }
+
+    // Executa a contagem ao carregar a página
+    setTimeout(runCounters, 300);
+
 });
