@@ -659,82 +659,6 @@ img {
     background-color: var(--bg-dark);
 }
 
-.plan-toggle-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 50px;
-}
-
-.toggle-label {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    cursor: pointer;
-}
-
-.toggle-label.active {
-    color: var(--text-light);
-}
-
-.badge-discount {
-    background-color: var(--bordeaux);
-    color: var(--gold-light);
-    font-size: 0.75rem;
-    padding: 3px 9px;
-    border-radius: var(--radius-full);
-    margin-left: 5px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-/* Toggle Switch */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 32px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    inset: 0;
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-gold);
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 24px;
-    width: 24px;
-    left: 3px;
-    bottom: 3px;
-    background-color: var(--gold-primary);
-    transition: .4s;
-}
-
-input:checked + .slider {
-    background-color: var(--gold-dark);
-}
-
-input:checked + .slider:before {
-    transform: translateX(28px);
-    background-color: var(--ivory);
-}
-
-.slider.round { border-radius: 34px; }
-.slider.round:before { border-radius: 50%; }
-
 /* Plan Cards Grid */
 .plans-grid {
     display: grid;
@@ -1343,6 +1267,164 @@ input:checked + .slider:before {
 }
 
 /* ==========================================
+   MAPAS NO RODAPÉ - GOOGLE MAPS
+   ========================================== */
+.maps-section {
+    padding: 60px 0;
+    background: linear-gradient(180deg, #020202 0%, #080808 100%);
+    border-top: 1px solid var(--border-gold);
+    border-bottom: 1px solid var(--border-gold);
+}
+
+.maps-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.maps-header .section-tag {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    background: rgba(201, 151, 43, 0.1);
+    border: 1px solid var(--border-gold);
+    padding: 8px 20px;
+    border-radius: var(--radius-full);
+    margin-bottom: 18px;
+}
+
+.maps-header .section-tag i {
+    margin-right: 8px;
+}
+
+.maps-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.maps-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.map-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-gold);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.map-card:hover {
+    border-color: var(--gold-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-gold);
+}
+
+.map-card.featured {
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 20px rgba(201, 151, 43, 0.15);
+}
+
+.map-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, rgba(201, 151, 43, 0.08) 0%, rgba(90, 15, 22, 0.08) 100%);
+    border-bottom: 1px solid var(--border-gold);
+}
+
+.map-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gold-gradient);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--preto-castello);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.map-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: var(--text-light);
+    margin-bottom: 2px;
+}
+
+.map-info p {
+    font-size: 0.8rem;
+    color: var(--gold-light);
+    font-weight: 500;
+}
+
+.map-embed {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid var(--border-gold);
+}
+
+.map-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: grayscale(0.6) brightness(0.85) contrast(1.1);
+    transition: var(--transition);
+}
+
+.map-card:hover .map-embed iframe {
+    filter: grayscale(0.2) brightness(0.95) contrast(1);
+}
+
+.map-card-footer {
+    padding: 15px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.map-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold-primary);
+    text-decoration: none;
+    padding: 10px 22px;
+    border: 1px solid var(--border-gold);
+    border-radius: var(--radius-full);
+    transition: var(--transition);
+}
+
+.map-btn i {
+    font-size: 0.9rem;
+}
+
+.map-btn:hover {
+    background: var(--gold-gradient);
+    color: var(--preto-castello);
+    border-color: var(--gold-primary);
+    transform: scale(1.03);
+}
+
+/* ==========================================
    BOTÃO FLUTUANTE WHATSAPP
    ========================================== */
 .whatsapp-float {
@@ -1412,6 +1494,8 @@ input:checked + .slider:before {
 
     .footer-content { grid-template-columns: 1fr 1fr; }
 
+    .maps-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
     .plan-featured { transform: scale(1); }
     .plan-featured:hover { transform: translateY(-8px); }
 }
@@ -1448,6 +1532,8 @@ input:checked + .slider:before {
 
     .footer-content { grid-template-columns: 1fr; }
 
+    .maps-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+
     .cta-title { font-size: 1.9rem; }
 
     .services-grid { grid-template-columns: 1fr; }
@@ -1458,4 +1544,6 @@ input:checked + .slider:before {
     .hero-buttons { flex-direction: column; align-items: center; }
     .hero-stats { flex-direction: column; gap: 15px; text-align: center; }
     .stat-divider { width: 40px; height: 1px; }
+    .maps-title { font-size: 1.5rem; }
+    .map-embed { height: 200px; }
 }

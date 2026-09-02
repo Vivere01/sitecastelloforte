@@ -42,34 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Membership Plan Billing Toggle (Mensal vs. Anual)
-    const planToggle = document.getElementById('plan-toggle');
-    const labelMonthly = document.getElementById('label-monthly');
-    const labelAnnual = document.getElementById('label-annual');
-    const monthlyPrices = document.querySelectorAll('.monthly-price');
-    const annualPrices = document.querySelectorAll('.annual-price');
-
-    if (planToggle) {
-        planToggle.addEventListener('change', () => {
-            if (planToggle.checked) {
-                // Switch to Annual
-                labelMonthly.classList.remove('active');
-                labelAnnual.classList.add('active');
-                
-                monthlyPrices.forEach(el => el.classList.add('hidden'));
-                annualPrices.forEach(el => el.classList.remove('hidden'));
-            } else {
-                // Switch to Monthly
-                labelAnnual.classList.remove('active');
-                labelMonthly.classList.add('active');
-                
-                annualPrices.forEach(el => el.classList.add('hidden'));
-                monthlyPrices.forEach(el => el.classList.remove('hidden'));
-            }
-        });
-    }
-
-    // 4. Smooth Active Section Link Highlighting
+    // 3. Smooth Active Section Link Highlighting
     const sections = document.querySelectorAll('section[id], footer[id]');
     
     window.addEventListener('scroll', () => {
